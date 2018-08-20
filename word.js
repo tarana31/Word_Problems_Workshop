@@ -1,14 +1,14 @@
 // #Problem : 1
 
-function wordstring(str) {
+// function wordstring(str) {
         
-    var newstring= "";
-    for(var i= str.length-1; i>=0; i--) {
-        newstring = newstring + str[i];
-    console.log(newstring);
-    }
-}
-wordstring('Hello');
+//     var newstring= "";
+//     for(var i= str.length-1; i>=0; i--) {
+//         newstring = newstring + str[i];
+//     console.log(newstring);
+//     }
+// }
+// wordstring('Hello');
 
 
 
@@ -31,26 +31,26 @@ wordstring('Hello');
 
 // #Problem : 3
 
-// function convert(str) {
-//     var vowel =['a','e','i','o','u'];
-//     var abc = '';
-//     var arr= str.split('');          //split a string into an array of substrings, and returns the new array
+function convert(str) {
+    var vowel =['a','e','i','o','u'];
+    var abc = '';
+    var arr= str.split('');          //split a string into an array of substrings, and returns the new array
     
-//     for( var i=0; i<vowel.length-1; i++){           
-//         for(var j=0;j<str.length-1;j++){
-//             if(str[j]===vowel[i]) {
-//                 for(var x=j;x<str.length;x++){
-//                     abc=abc+str[x];
-//                 }
-//                 for (var n=0;n<j;n++)
-//                 {
-//                     abc=abc+str[n];
-//                 }
-//                 return abc + "ay";
-//             }
-//         }
-//         console.log(str);
-//     }
+    for( var i=0; i<vowel.length-1; i++){           
+        for(var j=0;j<str.length-1;j++){
+            if(str[j]===vowel[i]) {
+                for(var x=j;x<str.length;x++){
+                    abc=abc+str[x];
+                }
+                for (var n=0;n<j;n++)
+                {
+                    abc=abc+str[n];
+                }
+                return abc + "ay";
+            }
+        }
+        console.log(str);
+    }
     
-// }
-// convert("prizes");
+}
+console.log(convert("icecream"));
