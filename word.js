@@ -36,8 +36,8 @@ function convert(str) {
     var abc = '';
     var arr= str.split('');          //split a string into an array of substrings, and returns the new array
     
-    for( var i=0; i<vowel.length-1; i++){           
-        for(var j=0;j<str.length-1;j++){
+    for( var i=0; i<vowel.length; i++){           
+        for(var j=0;j<str.length;j++){
             if(str[j]===vowel[i]) {
                 for(var x=j;x<str.length;x++){
                     abc=abc+str[x];
@@ -53,4 +53,6 @@ function convert(str) {
     }
     
 }
+console.log(convert("bulrush"));
 console.log(convert("icecream"));
+console.log(convert("monopoly"));
